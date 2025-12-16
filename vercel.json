@@ -33,7 +33,6 @@
         "APP_NAME": "Bantu.in",
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_KEY": "@app_key",
         "APP_URL": "https://bantu-in.vercel.app",
         "ASSET_URL": "https://bantu-in.vercel.app",
         "APP_CONFIG_CACHE": "/tmp/config.php",
