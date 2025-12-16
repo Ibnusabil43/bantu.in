@@ -28,3 +28,5 @@ Thumbs.db
 # Lock files (can be regenerated)
 composer.lock
 package-lock.json
+
+.vercel

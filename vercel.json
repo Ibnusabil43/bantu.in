@@ -17,8 +17,12 @@
             "dest": "/public/build/$1"
         },
         {
-            "src": "/(css|js|logo)/(.+)",
+            "src": "/(css|js|logo|favicon.ico|robots.txt)/(.+)",
             "dest": "/public/$1/$2"
+        },
+        {
+            "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot))",
+            "dest": "/public/$1"
         },
         {
             "src": "/(.*)",
@@ -26,8 +30,10 @@
         }
     ],
     "env": {
+        "APP_NAME": "Bantu.in",
         "APP_ENV": "production",
-        "APP_DEBUG": "false",
+        "APP_DEBUG": "true",
+        "APP_KEY": "@app_key",
         "APP_URL": "https://bantu-in.vercel.app",
         "ASSET_URL": "https://bantu-in.vercel.app",
         "APP_CONFIG_CACHE": "/tmp/config.php",
@@ -38,6 +44,7 @@
         "VIEW_COMPILED_PATH": "/tmp",
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "cookie"
+        "SESSION_DRIVER": "cookie",
+        "DB_CONNECTION": "sqlite"
     }
 }
