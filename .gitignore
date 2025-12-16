@@ -24,3 +24,7 @@ Homestead.yaml
 Thumbs.db
 
 .vercel
+
+# Lock files (can be regenerated)
+composer.lock
+package-lock.json
